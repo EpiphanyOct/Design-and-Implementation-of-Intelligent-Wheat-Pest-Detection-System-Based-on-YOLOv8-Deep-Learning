@@ -1,0 +1,179 @@
+/* 小麦害虫检测系统 - 全局样式 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+/* 登录页面样式 */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8DC26F 0%, #6BAA6F 50%, #4E9148 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 480px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+}
+
+.login-card .ant-card-head {
+  background: linear-gradient(135deg, #4E9148 0%, #6BAA6F 100%);
+  border-radius: 12px 12px 0 0;
+}
+
+.login-card .ant-card-head-title {
+  color: #fff;
+  text-align: center;
+}
+
+/* 表单样式 */
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+/* 按钮样式 */
+.ant-btn-primary {
+  background: linear-gradient(135deg, #4E9148 0%, #6BAA6F 100%);
+  border: none;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #3d7a38 0%, #5a9a5a 100%);
+}
+
+/* 表格样式 */
+.ant-table {
+  background: #fff;
+}
+
+/* 卡片样式 */
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* 统计卡片样式 */
+.statistic-card {
+  text-align: center;
+}
+
+.statistic-card .ant-statistic-title {
+  font-size: 14px;
+  color: #666;
+}
+
+.statistic-card .ant-statistic-content {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* 上传组件样式 */
+.ant-upload-picture-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* 进度条样式 */
+.ant-progress-bg {
+  border-radius: 100px;
+}
+
+/* 模态框样式 */
+.ant-modal-content {
+  border-radius: 8px;
+}
+
+/* 菜单样式 */
+.ant-menu-dark {
+  background: #001529;
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background: #1890ff;
+}
+
+/* 布局样式 */
+.ant-layout {
+  background: #f0f2f5;
+}
+
+.ant-layout-sider {
+  background: #001529;
+}
+
+.ant-layout-header {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .ant-layout-sider {
+    display: none;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
