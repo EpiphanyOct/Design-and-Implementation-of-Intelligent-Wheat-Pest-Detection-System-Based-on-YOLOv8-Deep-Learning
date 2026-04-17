@@ -1,0 +1,21 @@
+# 测试用JWT Token
+# Feature: User Authentication
+# 注意: 这些Token仅用于开发和测试，生产环境请勿使用
+
+## 管理员Token
+admin-token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVMDAxIiwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwNDE3MjgwMCwiZXhwIjoxNzA0MjU5MjAwfQ.test-signature
+
+## 检测员Token  
+inspector-token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVMDAyIiwidXNlcm5hbWUiOiJpbnNwZWN0b3IiLCJyb2xlIjoiSU5TUEVDVE9SIiwiaWF0IjoxNzA0MTcyODAwLCJleHAiOjE3MDQyNTkyMDB9.test-signature
+
+## 访客Token
+viewer-token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVMDAzIiwidXNlcm5hbWUiOiJ2aWV3ZXIiLCJyb2xlIjoiVklFV0VSIiwiaWF0IjoxNzA0MTcyODAwLCJleHAiOjE3MDQyNTkyMDB9.test-signature
+
+## 过期Token (用于测试Token过期场景)
+expired-token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVMDAxIiwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTYwNDE3MjgwMCwiZXhwIjoxNjA0MjU5MjAwfQ.test-signature
+
+## 无效Token
+invalid-token: invalid.token.here
+
+## 使用方法
+# curl -H "Authorization: Bearer <token>" http://localhost:8080/api/auth/current-user

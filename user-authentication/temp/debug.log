@@ -1,0 +1,27 @@
+# 调试日志
+# Feature: User Authentication
+
+## 2024-01-02
+[DEBUG] 用户登录接口测试开始
+[DEBUG] JWT Token生成测试: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVMDAxIiwidXNlcm5hbWUiOiJhZG1pbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwNDE3MjgwMCwiZXhwIjoxNzA0MjU5MjAwfQ.test
+[DEBUG] 密码加密测试: $2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5EO
+[INFO] 登录接口单元测试全部通过
+
+## 2024-01-03
+[DEBUG] 前端登录表单测试
+[DEBUG] 表单验证规则测试
+[WARN] 密码强度验证规则需要优化
+[INFO] 前端组件测试完成
+
+## 2024-01-04
+[DEBUG] 集成测试开始
+[DEBUG] 测试账号: admin / admin123
+[DEBUG] 测试账号: inspector / inspector123
+[DEBUG] 测试账号: viewer / viewer123
+[ERROR] 账号锁定功能测试发现问题 - 已修复
+[INFO] 所有测试通过
+
+## TODO
+- [ ] 添加登录验证码功能
+- [ ] 优化Token刷新机制
+- [ ] 添加登录日志记录
