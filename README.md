@@ -155,10 +155,10 @@ npm start
 
 ## 开发团队
 
-- 项目负责人：[Your Name]
-- 后端开发：[Developer Name]
-- 前端开发：[Developer Name]
-- 测试人员：[Tester Name]
+- 项目负责人：[Qingyang Jiao]
+- 前端开发：[Guilin Sun]
+- 客户对接：[Guilin Sun]
+- 后端开发：[Haonan Wu]
 
 ## 许可证
 
